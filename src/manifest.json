@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Genie Music Player Shortcuts",
+  "description": "This extension provides shortcuts for Genie Music Player.",
+  "version": "1.0.2",
+	
+  "icons" : { "16":"icon_16.png" , "128" : "icon_128.png" },
+  "permissions":["tabs","*://*.genie.co.kr/MusicPlayer/*"],	
+  "content_scripts":[
+	{
+		"matches":["*://*.genie.co.kr/MusicPlayer*"],
+ 		"js":["jquery-1.11.1.min.js","background.js"]
+  	}
+  ] 
+}
